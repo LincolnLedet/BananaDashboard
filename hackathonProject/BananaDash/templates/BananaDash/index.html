@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AnyChart Example</title>
+    <link rel="stylesheet" href="{% static 'BananaDash/styles.css' %}">
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-bundle.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+    <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+
+    
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Banana Bonanza!</h1>
+    </header>
+    <div id="container" style="width: 100%; height: 400px;">
+        <script src="{% static 'BananaDash/stocks.js' %}"></script>
+    </div>
+
+    <main>
+
+        <section class="banana-info">
+            <h2>Why Bananas Are Great</h2>
+            <p>Bananas are full of vitamins and minerals, they're a great source of energy, and they can be used in a variety of recipes. Plus, they come in their own convenient packaging!</p>
+        </section>
+        <section class="flex-container">
+            <div>1</div>
+            <div>2</div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Banana Bonanza. All rights reserved.</p>
+    </footer>
+</body>
+</html>
