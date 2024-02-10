@@ -2,17 +2,34 @@
 <html lang="en">
 <head>
     <title>AnyChart Example</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.anychart.com/releases/v8/js/anychart-bundle.min.js"></script>
-    <script src="stocks.js"></script>
 </head>
 <body>
     <header>
         <h1>Welcome to Banana Bonanza!</h1>
     </header>
+    <div id="container" style="width: 100%; height: 400px;">
+        <script>
+            anychart.onDocumentReady(function() {
+                var data = {
+                    header: ["Name", "Amount"],
+                    rows: [
+                        ["Apples", 5],
+                        ["Bananas", 7],
+                        ["Grapes", 2],
+                        ["Oranges", 8]
+                    ]
+                };
+                var chart = anychart.column();
+                chart.data(data);
+                chart.title("Fruit Inventory");
+                chart.container("container");
+                chart.draw();
+            });
+        </script>
+    </div>
     <main>
-        
-        
-        <div id="container" style="width: 100%; height: 100%;"></div>
 
         <section class="banana-info">
             <h2>Why Bananas Are Great</h2>
