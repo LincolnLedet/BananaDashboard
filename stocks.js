@@ -1,4 +1,29 @@
+
+async function readcsv() {
+    const csvUrl = 'DOLE.csv'; // Replace this with the URL to your CSV file
+    const response = await fetch(csvUrl);
+    const csvText = await response.text();
+  
+    // Parse the CSV text
+    // If using PapaParse:
+    const parsedData = Papa.parse(csvText, {header: false, dynamicTyping: true}).data;
+    
+    // Without PapaParse, you would manually split the text into lines and values:
+    // const parsedData = csvText.split('\n').map(row => row.split(','));
+  
+    return parsedData; // This is an array of arrays, similar to your static data format
+  }
+
+console.log(typeof(readcsv()));
+
+readcsv().then(parsedData => {
+    console.log(parsedData[1][1]); // This will log the actual parsed data
+  });
+
+
 anychart.onDocumentReady(function () {
+
+    
 
     // create a data set on our data
     var dataSet = anychart.data.set(getData());
