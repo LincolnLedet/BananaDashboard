@@ -53,3 +53,16 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.flex-container {
+    display: flex;
+    background-color: #fff3e0;
+  }
+
+.flex-container > div {
+    background-color: #ffeeba;
+    margin: 10px;
+    padding: 40px;
+    flex: 1; 
+    font-size: 20px;
+  }
