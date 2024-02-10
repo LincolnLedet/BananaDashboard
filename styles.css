@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e0; /* light banana color */
+}
+
+header {
+    background-color: #fdda07; /* banana yellow */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Garamond', serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.banana-info, .banana-recipes {
+    background-color: #ffeeba; /* light banana peel */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+li::before {
+    content: '🍌';
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    background-color: #fdda07;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
