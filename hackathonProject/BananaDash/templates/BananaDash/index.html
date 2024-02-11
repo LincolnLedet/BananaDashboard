@@ -29,6 +29,11 @@
         <section class="banana-info">
             <h2>Why Bananas Are Great</h2>
             <p>Bananas are full of vitamins and minerals, they're a great source of energy, and they can be used in a variety of recipes. Plus, they come in their own convenient packaging!</p>
+            <button onclick="showBananaFact()">Show me a banana fact</button>
+
+            <script src="{% static 'BananaDash/RandomBananafact.js' %}"></script>
+            <div id="bananaFactDisplay" style="margin-top: 20px; font-size: 20px;"></div>
+
         </section>
         <section class="flex-container">
             <div>1</div>
