@@ -25,6 +25,7 @@
     </div>
 
     <main>
+        
 
         <section class="banana-info">
             <h2>Why Bananas Are Great</h2>
@@ -36,7 +37,16 @@
 
         </section>
         <section class="flex-container">
-            <div>1</div>
+            <div>
+                <h2>Latest Banana News</h2>
+                <ul>
+                    {% for story in news_stories %}
+                    <li>
+                        <a href="{{ story.url }}">{{ story.title }}</a> - {{ story.description }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
             <div>2</div>
         </section>
     </main>
