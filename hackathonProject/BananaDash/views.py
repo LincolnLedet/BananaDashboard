@@ -13,7 +13,7 @@ def home(request):
 
 
 def fetch_news(api_key):
-    url = f"https://newsapi.org/v2/everything?q=banana&sortBy=new&apiKey={api_key}"
+    url = f"https://newsapi.org/v2/everything?q=banana&pageSize={3}&sortBy=new&apiKey={api_key}"
     response = requests.get(url)
     if response.status_code == 200:
         print(response.json())

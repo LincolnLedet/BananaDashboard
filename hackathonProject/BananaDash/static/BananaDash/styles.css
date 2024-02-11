@@ -2,11 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff3e0; /* light banana color */
+    background-color: #3a3a34; /* light banana color */
 }
 
+#container{
+    margin: 10px auto;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 15%;
+    height: auto;
+}
 header {
-    background-color: #fdda07; /* banana yellow */
+    background-color: #fdd662; /* banana yellow */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -45,7 +55,7 @@ li::before {
 }
 
 footer {
-    background-color: #fdda07;
+    background-color: #fdd662;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -56,13 +66,14 @@ footer {
 
 .flex-container {
     display: flex;
-    background-color: #fff3e0;
+    background-color: #3a3a34;
   }
 
 .flex-container > div {
-    background-color: #ffeeba;
+    background-color: #fff;
     margin: 10px;
     padding: 40px;
     flex: 1; 
     font-size: 20px;
+    border-radius: 15px;
   }
