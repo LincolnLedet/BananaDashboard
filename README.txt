@@ -1,0 +1,2 @@
+A simple hackathon project made in 2023. The goal of this project was to create a dashboard for infonmation such as stock price, seller locations and new articles as it realtes to bananas. While the goals of this project were simple, it took lots of blood sweat and tears
+from the 3 novice programmers who teamed up at the 2023 uga hackathon. This project is currently on the back burner and will be revisted sometime in 2025 with new found skills of webscrapping, data displays and web programming. 
